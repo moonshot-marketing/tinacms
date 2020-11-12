@@ -3,14 +3,14 @@
 # Terminate after the first line that fails (returns nonzero exit code)
 set -e
 
-# # 1. Update Matser
-# git checkout master
-# git pull
+# 1. Update Matser
+git checkout master
+git pull
 
-# # 2. Update Latest
-# git checkout latest
-# git pull
-# git merge master
+# 2. Update Latest
+git checkout latest
+git pull
+git merge master
 
 # 3. Run a Fresh Build
 npm run hard-reset
@@ -21,7 +21,7 @@ lerna version \
   --yes \
   --conventional-commits \
   --conventional-graduate \
-  --allow-branch master \
+  --allow-branch latest \
   --create-release github \
   -m "chore(publish): latest" \
   --ignore-changes '**/*.md' '**/*.test.tsx?' '**/package-lock.json' '**/tsconfig.json' \
@@ -31,6 +31,6 @@ lerna version \
 lerna publish from-package --yes
 
 # 7. Backmerge to master
-# git checkout master
-# git merge latest
-# git push
+git checkout master
+git merge latest
+git push
