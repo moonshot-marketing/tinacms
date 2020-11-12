@@ -55,11 +55,5 @@
   },
   "publishConfig": {
     "registry": "http://nexus.moonshot-marketing.com:8081/repository/moonshot-npm/"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   }
 }
