@@ -53,10 +53,6 @@
     "depcheck": "^0.9.1",
     "tinacms": "^0.18.2"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/moonshot-marketing/tinacms.git"
-  },
   "publishConfig": {
     "registry": "http://nexus.moonshot-marketing.com:8081/repository/moonshot-npm/"
   }
