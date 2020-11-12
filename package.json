@@ -53,10 +53,11 @@
     "depcheck": "^0.9.1",
     "tinacms": "^0.18.2"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moonshot-marketing/tinacms.git"
+  },
+  "publishConfig": {
+    "registry": "http://nexus.moonshot-marketing.com:8081/repository/moonshot-npm/"
   }
 }
